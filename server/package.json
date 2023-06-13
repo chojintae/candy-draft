@@ -1,0 +1,29 @@
+{
+  "name": "cse331-hw-draft-server",
+  "version": "0.0.1",
+  "description": "CSE 331 HW Draft Server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "ts-mocha -p tsconfig.json src/**/*_test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/assert": "^1.5.6",
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.17",
+    "@types/mocha": "^5.2.7",
+    "assert": "^2.0.0",
+    "mocha": "^10.1.0",
+    "node-mocks-http": "^1.12.1",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.8.4"
+  }
+}
